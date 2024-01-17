@@ -39,7 +39,7 @@ public class CreateBankAccount {
     }
 
     public void printDataOnAccount(){
-        System.out.printf("Account data:\nAccount: %d\nHolder: %s\nBalance: %f",this.accountNumber,this.holder,this.balance);
+        System.out.printf("Account data:\nAccount: %d\nHolder: %s\nBalance: %.2f",this.accountNumber,this.holder,this.balance);
     }
 
 }

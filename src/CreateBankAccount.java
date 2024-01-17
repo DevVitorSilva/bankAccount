@@ -26,5 +26,8 @@ public class CreateBankAccount {
         return this.accountNumber;
     }
 
-    
+    public double getBalance(){
+        return this.balance;
+    }
+
 }

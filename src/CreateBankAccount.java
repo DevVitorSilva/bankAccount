@@ -22,4 +22,9 @@ public class CreateBankAccount {
         this.holder = holder;
     }
 
+    public int getAccountNumber(){
+        return this.accountNumber;
+    }
+
+    
 }

@@ -38,4 +38,8 @@ public class CreateBankAccount {
         return this.balance -= balance;
     }
 
+    public void printDataOnAccount(){
+        System.out.printf("Account data:\nAccount: %d\nHolder: %s\nBalance: %f",this.accountNumber,this.holder,this.balance);
+    }
+
 }

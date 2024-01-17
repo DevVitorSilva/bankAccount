@@ -12,7 +12,13 @@ public class Main {
         System.out.print("Is there an initial deposit (y/n)? ");
         char initialDeposit = sc.next().charAt(0);
         sc.close();
-
+        CreateBankAccount bankAccount = new CreateBankAccount(holder, accountNumber);
+        if(initialDeposit == 'y'){
+            bankAccount.deposit(initialDeposit);
+            bankAccount.printDataOnAccount();
+        }else{
+            bankAccount.printDataOnAccount();
+        }
     }
 
 }

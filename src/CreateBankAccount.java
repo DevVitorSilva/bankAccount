@@ -1,6 +1,6 @@
 public class CreateBankAccount {
     private String holder;
-    private int accountNumber;
+    private final int accountNumber;
     private double balance;
 
     public CreateBankAccount(String holder, int accountNumber){

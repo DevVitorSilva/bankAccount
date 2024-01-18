@@ -8,10 +8,10 @@ public class CreateBankAccount {
         this.accountNumber = accountNumber;
         this.balance = 0.0;
     }
-    public CreateBankAccount(String holder, int accountNumber, double balance){
+    public CreateBankAccount(String holder, int accountNumber, double initialDeposit){
         this.holder = holder;
         this.accountNumber = accountNumber;
-        this.balance = balance;
+        deposit(initialDeposit);
     }
 
     public String getHolder(){

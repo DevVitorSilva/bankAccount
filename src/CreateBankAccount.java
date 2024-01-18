@@ -30,12 +30,12 @@ public class CreateBankAccount {
         return this.balance;
     }
 
-    public double deposit(double balance){
-        return this.balance += balance;
+    public void deposit(double balance){
+        this.balance += balance;
     }
 
-    public double withdraw(double balance){
-        return this.balance -= balance;
+    public void withdraw(double balance){
+        this.balance -= balance + 5.0;
     }
 
     public void printDataOnAccount(){

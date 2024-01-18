@@ -10,9 +10,9 @@ public class Main {
         System.out.print("Enter account number: ");
         int accountNumber = sc.nextInt();
         System.out.print("Is there an initial deposit (y/n)? ");
-        char initialDeposit = sc.next().charAt(0);
+        char response = sc.next().charAt(0);
         CreateBankAccount bankAccount = new CreateBankAccount(holder, accountNumber);
-        if(initialDeposit == 'y'){
+        if(response == 'y'){
             System.out.print("Enter initial deposit value: ");
             double firstDeposit = sc.nextDouble();
             bankAccount.deposit(firstDeposit);
